@@ -7,103 +7,84 @@
 </head>
 <body>
      <style>
-       /* RESET */
+    /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
 }
 
-/* BODY */
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #e5e7eb;
-    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-/* CONTAINER STYLE */
-body > * {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* HEADING */
+/* Title */
 h1 {
-    text-align: center;
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color: #00c2ff;
+    letter-spacing: 2px;
 }
 
-/* PARAGRAPHS */
+/* Paragraph */
 p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-    font-size: 17px;
-    text-align: center;
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #ccc;
 }
 
-/* LINKS (SOCIALS) */
+/* Social links */
 a {
     display: inline-block;
-    margin: 10px 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
     text-decoration: none;
-    color: #00c2ff;
-    border: 1px solid #00c2ff;
-    padding: 10px 15px;
-    border-radius: 20px;
+    color: white;
+    background: rgba(255,255,255,0.1);
     transition: 0.3s;
 }
 
-/* Hover effect */
 a:hover {
-    background: #00c2ff;
-    color: #000;
-    transform: translateY(-2px);
+    background: white;
+    color: black;
 }
 
-/* BUTTONS */
+/* Button */
 button {
-    display: inline-block;
-    margin: 30px 10px 0;
+    margin-top: 30px;
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(135deg, #00c2ff, #0077b6);
-    color: white;
-    font-size: 15px;
+    background: white;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Button hover */
 button:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #0077b6, #023e8a);
+    background: gray;
+    color: white;
 }
 
-/* BUTTON CONTAINER ALIGNMENT */
-button {
-    display: inline-block;
-}
-
-body {
-    text-align: center;
-}
-
-/* RESPONSIVE */
+/* Mobile */
 @media (max-width: 600px) {
     h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
-    </style>
+     </style>
+    
      
     <h1>
         About us
