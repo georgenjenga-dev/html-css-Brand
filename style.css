@@ -7,37 +7,48 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: #000;
     color: white;
+}
+
+/* Center Logo */
+.logo-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-center img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
 /* Navbar */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
     z-index: 1000;
-}
-
-.logo img {
-    width: 50px;
-    border-radius: 50%;
 }
 
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 8px 18px;
     border-radius: 20px;
     transition: 0.3s;
 }
@@ -47,7 +58,7 @@ body {
     color: black;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     height: 100vh;
     background: url('https://i.pinimg.com/1200x/27/41/9e/27419e498c4bc7e7993681e857f5f0db.jpg') no-repeat center/cover;
@@ -57,12 +68,12 @@ body {
     text-align: center;
 }
 
-.hero h1 {
+.hero-title {
     font-size: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
-.hero p {
+.hero-subtitle {
     margin-top: 10px;
     font-size: 18px;
 }
@@ -70,24 +81,24 @@ body {
 /* Collections */
 .collections {
     padding: 80px 20px;
-    background: #111;
     text-align: center;
+    background: #111;
 }
 
-.collections h2 {
+.collections-title {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-/* Explore */
+/* Explore Button */
 .explore {
     padding: 60px;
     text-align: center;
-    background: black;
+    background: #000;
 }
 
-.explore button {
-    padding: 12px 25px;
+.button button {
+    padding: 12px 30px;
     border: none;
     border-radius: 25px;
     background: white;
@@ -97,7 +108,7 @@ body {
     transition: 0.3s;
 }
 
-.explore button:hover {
+.button button:hover {
     background: gray;
     color: white;
 }
@@ -111,12 +122,17 @@ footer {
 
 /* Mobile */
 @media (max-width: 600px) {
-    .hero h1 {
+    .hero-title {
         font-size: 32px;
     }
 
     .nav-links {
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-center img {
+        width: 90px;
+        height: 90px;
     }
 }
