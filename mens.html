@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men clothing</title>
+</head>
+<body>
+    <style>
+        /* Page background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
+
+/* Title (optional if you add one) */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Image Grid */
+.image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Images */
+.image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/* Hover effect */
+.image img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+    </style>
+    <div class="image">
+        <img src="https://i.pinimg.com/736x/81/a6/9e/81a69ea3e327933d1ac5979baa571ce0.jpg">
+        <img src="https://i.pinimg.com/736x/64/c1/57/64c15722ff8bc50b5d30a104d6951b43.jpg">
+        <img src="https://i.pinimg.com/1200x/0d/f3/3c/0df33c15facb843c462c628adcca1bc9.jpg">
+        <img src="https://i.pinimg.com/1200x/25/17/05/251705254699a3ec7a64430ce82ad21e.jpg">
+        <img src="https://i.pinimg.com/736x/4f/f4/15/4ff415fc49895b67ae3b0c35302e91dc.jpg">
+        <img src="https://i.pinimg.com/736x/8a/79/d4/8a79d41d4462c824677604e0a56d7c22.jpg">
+    </div>
+</body>
+</html>
