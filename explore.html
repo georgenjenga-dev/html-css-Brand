@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore</title>
+    <title>Explore - Once Upon Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <style>
+        /* Explore Page */
+.explore-page {
+    padding: 120px 20px;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+
+.explore-page h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.explore-page p {
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Grid */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.explore-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Hover Effect */
+.explore-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+    </style>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</nav>
+
+<section class="explore-page">
+    <h1>EXPLORE OUR STYLE</h1>
+    <p>Discover the latest drops and timeless pieces</p>
+
+    <div class="explore-grid">
+
+        <div class="explore-card">
+            <img src="https://i.pinimg.com/736x/4f/77/93/4f7793c6d7c5a9b5f7a7e7e6c5f2b123.jpg">
+            <div class="overlay">Hoodies</div>
+        </div>
+
+        <div class="explore-card">
+            <img src="https://i.pinimg.com/736x/2c/77/1c/2c771c6b3d9e6e8f6e6e6e6e6e6e6e6e.jpg">
+            <div class="overlay">T-Shirts</div>
+        </div>
+
+        <div class="explore-card">
+            <img src="https://i.pinimg.com/736x/6d/88/77/6d8877e7e7e7e7e7e7e7e7e7e7e7e7e7.jpg">
+            <div class="overlay">Caps</div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Once Upon Us. All rights reserved
+</footer>
+
 </body>
 </html>
