@@ -158,3 +158,77 @@ footer{
     width: 100px;
     border-radius: 100%;
 }
+/* Collections Section */
+.collections {
+    background: url('https://i.pinimg.com/736x/b0/66/b6/b066b6f6fdcae011c9f2a95e8fb8f8d5.jpg');
+    padding: 10px 5px;
+    background: #0a0909;
+    text-align: center;
+}
+
+.collections-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.collection-body p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    
+}
+/*<--collection-->*/
+.explore {
+    padding: 50px 20px;
+    background: #050505;
+}
+
+.explore-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-item1 {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.button button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: rgb(6, 6, 6);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.button button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* Active (click) effect */
+.button button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .button {
+        flex-direction: column;
+    }
+
+    .button button {
+        width: 100%;
+    }
+}
