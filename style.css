@@ -133,3 +133,7 @@ footer{
     padding: 10px;
     
 }
+.logo img {
+    width: 100px;
+    border-radius: 100%;
+}
