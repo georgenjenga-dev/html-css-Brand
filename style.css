@@ -74,7 +74,28 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    height: 100vh;
+background: url('https://i.pinimg.com/1200x/27/41/9e/27419e498c4bc7e7993681e857f5f0db.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
 }
+body {
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  min-height: 100dvh; /* better for mobile */
+}
+
+
 
 /* Overlay */
 .hero::before {
